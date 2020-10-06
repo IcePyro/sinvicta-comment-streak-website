@@ -2,8 +2,8 @@
   .channel(:class="[barType()]")
       .bar(:style="barPercentage()")
       .content
-        .current-name {{ channel.currentName }}
-        .streak {{ channel.streak }}
+        .current-name {{ channel.currentUsername }}
+        .streak {{ channel.currentStreak }}
 </template>
 
 <script lang="ts">
@@ -21,7 +21,7 @@ export default class ChannelView extends Vue {
   private maxStreak: number;
 
   private barLength(): number {
-    return this.channel.streak / this.maxStreak;
+    return this.channel.currentStreak / this.maxStreak;
   }
 
   private barPercentage(): number {

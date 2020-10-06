@@ -2,7 +2,7 @@
     .page
         h1 Leaderboard
         .board
-          ChannelView(v-for="channel in channels" :key="channel.id" :channel="channel" max-streak="420")
+          ChannelView(v-for="channel in channels" :key="channel.channelId" :channel="channel" max-streak="420")
 </template>
 
 <script lang="ts">
