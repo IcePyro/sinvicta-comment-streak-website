@@ -1,5 +1,5 @@
 <template lang="pug">
-  .channel(:class="[barType()]")
+  .channel
       .bar(:style="barPercentage()")
       .content
         .current-name {{ channel.currentUsername }}
@@ -28,10 +28,6 @@ export default class ChannelView extends Vue {
     return {
       "--bar": this.barLength() * 100 + "%"
     }
-  }
-
-  private barType(): string {
-    return this.barLength() < 0.5 ? "extended" : "compact";
   }
 }
 </script>
