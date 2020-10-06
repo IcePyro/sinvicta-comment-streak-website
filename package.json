@@ -1,12 +1,12 @@
 {
-  "name": "parceljs-vue-ts-template",
+  "name": "sinvicta-comment-streak-website",
   "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "npx parcel app/index.pug",
     "build": "npx parcel build app/index.pug"
   },
-  "author": "Paul Methfessel",
+  "author": "Louis Haub & Paul Methfessel",
   "license": "MIT",
   "devDependencies": {
     "@vue/component-compiler-utils": "^3.2.0",

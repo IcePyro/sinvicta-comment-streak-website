@@ -1,18 +1,18 @@
 <template lang="pug">
     #app
-        ExamplePage(ref="example" foo="Hello World")
+        Leaderboard(ref="board")
 </template>
 
 <script lang="ts">
     import Vue from "vue";
     import Component from "vue-class-component";
-    import ExamplePage from "./pages/ExamplePage.vue";
+    import Leaderboard from "./pages/Leaderboard.vue";
 
-    @Component({components: {ExamplePage}})
+    @Component({components: {Leaderboard}})
     export default class App extends Vue {
 
         $refs!: {
-            example: ExamplePage
+            board: Leaderboard
         }
 
         public mounted() {
@@ -34,5 +34,8 @@
 </style>
 
 <style lang="sass" scoped>
-    // Scoped styles
+  #app
+    width: 40%
+    margin: 0 auto
+    font-size: 2em
 </style>
